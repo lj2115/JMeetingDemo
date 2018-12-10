@@ -309,7 +309,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                //release IM
 //                releaseIM();
 //                break;
-//
 //            //发送会议邀请
 //            case R.id.btn_send_meeting_invitation:
 //                //获取输入的接收者的视讯号和名称
