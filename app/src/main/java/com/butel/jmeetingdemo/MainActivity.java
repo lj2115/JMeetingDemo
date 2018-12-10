@@ -306,7 +306,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //
 //                btn_release_im.setEnabled(false);
 //                btn_init_im.setEnabled(initOKFlag);
-//
 //                //release IM
 //                releaseIM();
 //
