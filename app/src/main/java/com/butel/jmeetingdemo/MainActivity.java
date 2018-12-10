@@ -316,7 +316,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                //获取输入的接收者的视讯号和名称
 //                account_receiver = et_account_receiver.getText().toString();
 //                name_receiver = et_name_receiver.getText().toString();
-//
 //                if (TextUtils.isEmpty(account_receiver) || TextUtils.isEmpty(name_receiver)){
 //                    Toast.makeText(MainActivity.this, "请先输入接收者的视讯号或昵称", Toast.LENGTH_SHORT).show();
 //                }else {
