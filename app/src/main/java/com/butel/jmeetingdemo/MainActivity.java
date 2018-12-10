@@ -224,7 +224,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //获取发送IM消息按钮
         btn_send_meeting_invitation = (Button) findViewById(R.id.btn_send_meeting_invitation);
         btn_send_meeting_invitation.setOnClickListener(this);
-
     }
 
     @SuppressLint("WrongConstant")
