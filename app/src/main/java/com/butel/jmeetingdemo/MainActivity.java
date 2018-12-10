@@ -308,7 +308,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                btn_init_im.setEnabled(initOKFlag);
 //                //release IM
 //                releaseIM();
-//
 //                break;
 //
 //            //发送会议邀请
