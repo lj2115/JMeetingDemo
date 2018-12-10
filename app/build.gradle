@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.butel.jmeetingdemo"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 32
+        versionName "2.0.32"
+        multiDexEnabled true //支持分Dex
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs', 'src/main/jniLibs']
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
+        preDexLibraries = false //delete the already predexed libraries
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'  //aar目录
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //我司提供的依赖
+    compile(name: 'JMeetingSDK_shyd1.0.0.25', ext: 'aar')
+
+    //第三方提供的依赖
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.8.3'
+
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+}
