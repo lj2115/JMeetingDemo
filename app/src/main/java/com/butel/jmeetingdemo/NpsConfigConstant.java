@@ -8,12 +8,12 @@ package com.butel.jmeetingdemo;
 public class NpsConfigConstant {
 
 //    //上海内网appKey和密码
-//    public static final String AUTH_APPKEY = "0ab4a7a30d3840d4aefcf36e68344370";
-//    public static final String AUTH_PASSWORD = "867223";
+//    public static final String AUTH_APPKEY = "";
+//    public static final String AUTH_PASSWORD = "";
 
     //党建云项目使用appKey和密码
-    public static final String AUTH_APPKEY = "477eb384bf334c4192bcbc9b103e5096";
-    public static final String AUTH_PASSWORD = "123456";
+    public static final String AUTH_APPKEY = "";
+    public static final String AUTH_PASSWORD = "";
 
     //大网nps地址
     public static final String NPS_RELEASE = "http://xmeeting.butel.com/nps_x1/";
