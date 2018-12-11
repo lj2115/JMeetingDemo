@@ -332,7 +332,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                        createMeeting(list, name_sender + "会诊室", 1, "", context);
 //                    }
 //                }
-//
 //                break;
 
             default:
